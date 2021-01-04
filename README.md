@@ -5,7 +5,7 @@
 ```
 /api/auth/register
 ```
-##### Required Values
+#### Required Values
 ```
 {
   username: STRING,
@@ -19,7 +19,7 @@
 ```
 /api/auth/login
 ```
-##### Required Values
+#### Required Values
 ```
 {
   username: STRING,
