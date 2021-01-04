@@ -1,5 +1,3 @@
-# Backend
-
 ## USER ENDPOINTS:
 ### [**POST**] **- Register endpoint**
 ```
