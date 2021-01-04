@@ -1,7 +1,7 @@
 # Backend
 
 ## USER ENDPOINTS:
-### [POST] - Register endpoint
+### [**POST**] **- Register endpoint**
 ```
 /api/auth/register
 ```
@@ -14,8 +14,7 @@
 }
 ```
 
-
-### [POST] - Login endpoint
+### [**POST**] **- Login endpoint**
 ```
 /api/auth/login
 ```
