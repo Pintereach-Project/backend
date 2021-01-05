@@ -22,7 +22,7 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: './database/pintereach_prod.db3'
+      filename: './database/pintereach.db3'
     },
     migrations: {
       directory: './database/migrations'

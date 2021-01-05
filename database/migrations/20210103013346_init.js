@@ -9,8 +9,10 @@ exports.up = function(knex) {
     })
     .createTable('articles', tbl => {
       tbl.increments();
-      tbl.string('title', 128).notNullable();
-      tbl.string('description').notNullable();
+      tbl.string('title', 256).notNullable();
+      tbl.string('author').notNullable();
+      tbl.string('content').notNullable();
+      tbl.string('image');
       tbl.string('category');
       tbl.integer('rank').defaultTo(0);
     })
