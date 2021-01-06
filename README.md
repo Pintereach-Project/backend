@@ -44,6 +44,7 @@
 {
   id: STRING,
   category OR rank: STRING
+  
   // The value will change to whatever is sent so make sure to 
   // send the desired value for either category or string
   // Ex: Sending a rank of 8 will change the rank to 8, not
