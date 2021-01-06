@@ -42,7 +42,6 @@
 #### - Required Values
 ```
 {
-  id: STRING,
   category OR rank: STRING
   
   // The value will change to whatever is sent so make sure to 
