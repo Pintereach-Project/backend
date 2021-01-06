@@ -29,3 +29,20 @@
 ```
 /api/articles
 ```
+
+### [**GET**] **- Get article by id**
+```
+/api/articles/:id
+```
+
+### [**PUT**] **- Update an article's category or rank**
+```
+/api/articles/:id
+```
+#### - Required Values
+```
+{
+  id: STRING,
+  category OR rank: STRING
+}
+```
