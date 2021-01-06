@@ -23,3 +23,9 @@
   password: STRING
 }
 ```
+-------------------------------------------
+# ARTICLE ENDPOINTS:
+### [**GET**] **- Get all articles**
+```
+/api/articles
+```
