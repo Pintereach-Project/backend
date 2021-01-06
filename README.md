@@ -1,4 +1,4 @@
-## USER ENDPOINTS:
+# USER ENDPOINTS:
 ### [**POST**] **- Register endpoint**
 ```
 /api/auth/register
