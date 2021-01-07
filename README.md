@@ -30,7 +30,7 @@
 /api/articles
 ```
 
-### [**GET**] **- Get article by id**
+### [**GET**] **- Get an article by id**
 ```
 /api/articles/:id
 ```
@@ -42,7 +42,7 @@
 #### - Required Values
 ```
 {
-  userId: STRING // Can be saved upon login
+  userId: STRING // Can be found upon login
 }
 ```
 
@@ -67,5 +67,15 @@
 # READ LATER ENDPOINTS:
 ### [**GET**] **- Get all saved articles**
 ```
-/api/saved-articles/:username
+/api/saved-articles/:userId
+```
+### [**DELETE**] **- Delete an article from your saved articles list**
+```
+/api/saved-articles
+```
+#### - Required Values
+```
+{
+  savedId: STRING // Can be found upon intital GET request as "savedId"
+}
 ```
