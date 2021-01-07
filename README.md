@@ -35,6 +35,17 @@
 /api/articles/:id
 ```
 
+### [**POST**] **- Save an article to read later**
+```
+/api/articles/:id
+```
+#### - Required Values
+```
+{
+  userId: STRING // Can be saved upon login
+}
+```
+
 ### [**PUT**] **- Update an article's category or rank**
 ```
 /api/articles/:id
@@ -42,7 +53,7 @@
 #### - Required Values
 ```
 {
-  category OR rank: STRING
+  category: STRING ---or--- rank: INTEGER
   
   // The value will change to whatever is sent so make sure to 
   // send the desired value for either category or rank.
@@ -51,4 +62,10 @@
   // request to get the initial value first, adding one, then 
   // sending back the new value.
 }
+```
+-------------------------------------------
+# READ LATER ENDPOINTS:
+### [**GET**] **- Get all saved articles**
+```
+/api/saved-articles/:username
 ```
