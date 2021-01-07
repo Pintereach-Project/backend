@@ -18,12 +18,12 @@ exports.up = function(knex) {
     })
     .createTable('readLater', tbl => {
       tbl.increments();
-      tbl.integer('articleId')
+      tbl.integer('articleId').notNullable()
         .unsigned().references('articles.id')
-        .onDelete('RESTRICT').onUpdate('CASCADE');
-      tbl.integer('userId')
+        .onDelete().onUpdate('CASCADE');
+      tbl.integer('userId').notNullable()
       .unsigned().references('users.id')
-      .onDelete('RESTRICT').onUpdate('CASCADE');
+      .onDelete().onUpdate('CASCADE');
     });
 };
 

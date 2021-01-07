@@ -14,4 +14,3 @@ axios.get('http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=b3adbcb
 exports.seed = function(knex) {
   return knex('articles').insert(newArticles);
 };
-

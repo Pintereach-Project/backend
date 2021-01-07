@@ -28,6 +28,21 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+router.post('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { userId } = req.body;
+    const savedArticle = await Article.saveArticle(id, userId);
+    if(savedArticle) {
+      res.status(200).json(savedArticle);
+    } else {
+      res.status(400).json({ message: 'Error saving article' });
+    }
+  } catch(err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 router.put('/:id', async (req, res) => {
   try {
     const { id } = req.params;
